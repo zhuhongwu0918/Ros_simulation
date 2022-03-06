@@ -1,0 +1,8 @@
+prefix=/home/d/catkin_ws_git/devel
+
+Name: zhhwur10
+Description: Description of zhhwur10
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

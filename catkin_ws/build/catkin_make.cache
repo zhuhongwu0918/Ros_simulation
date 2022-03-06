@@ -1,0 +1,2 @@
+beginner_tutorials:zhhwur
+-DCATKIN_DEVEL_PREFIX=/home/d/catkin_ws_git/devel -DCMAKE_INSTALL_PREFIX=/home/d/catkin_ws_git/install -G Unix Makefiles

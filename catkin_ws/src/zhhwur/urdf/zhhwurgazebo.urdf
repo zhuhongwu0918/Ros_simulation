@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="zhhwur">
+  <link name="world">
+   </link>
+  <joint name="fixed" type="fixed">
+     <parent link="world"/>
+     <child link="base_link"/>
+   </joint>
+   
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000150607869820062 1.45060687069175E-05 0.0184354408078916"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.1"
+        ixy="0.1"
+        ixz="0.1"
+        iyy="0.1"
+        iyz="0.1"
+        izz="0.1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="m1">
+    <inertial>
+      <origin
+        xyz="0.0120385752274126 -0.000118284553780864 0.0784763878349876"
+        rpy="0 0 0" />
+      <mass
+        value="3.07358882111625" />
+      <inertia
+        ixx="0.107166800813381"
+        ixy="0.0"
+        ixz="-0.00858448119002905"
+        iyy="0.11477402586057"
+        iyz="0.0"
+        izz="0.101200063941481" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="continuous">
+    <origin
+      xyz="-0.00011719 9.3527E-05 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="m1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m2">
+    <inertial>
+      <origin
+        xyz="0.187414749480675 -1.82665069576315E-05 0.0851997268225625"
+        rpy="0 0 0" />
+      <mass
+        value="7.37869630043743" />
+      <inertia
+        ixx="0.172074860582987"
+        ixy="0.0"
+        ixz="-0.00858589354481182"
+        iyy="0.936339985456334"
+        iyz="0.0"
+        izz="0.92276196715791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="continuous">
+    <origin
+      xyz="0.086424 -0.0001115 0.090017"
+      rpy="1.5708 -0.39649 1.5708" />
+    <parent
+      link="m1" />
+    <child
+      link="m2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m3">
+    <inertial>
+      <origin
+        xyz="0.0101482746186852 -0.00242654471722409 0.0563792430636668"
+        rpy="0 0 0" />
+      <mass
+        value="1.33384705337391" />
+      <inertia
+        ixx="0.265289034166969"
+        ixy="0.0"
+        ixz="-0.00262430271565663"
+        iyy="0.0288046030833349"
+        iyz="0.0"
+        izz="0.0270989320172714" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="continuous">
+    <origin
+      xyz="0.54659 -1.4844E-05 0.09"
+      rpy="0 1.5708 0" />
+    <parent
+      link="m2" />
+    <child
+      link="m3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m4">
+    <inertial>
+      <origin
+        xyz="0.194385676174124 -0.0467572257603565 0.0576772007454893"
+        rpy="0 0 0" />
+      <mass
+        value="3.9249452668649" />
+      <inertia
+        ixx="0.0742207603460274"
+        ixy="0.103846937239433"
+        ixz="-0.00215152400740903"
+        iyy="0.480998830803436"
+        iyz="0.0"
+        izz="0.505397973213196" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j4"
+    type="continuous">
+    <origin
+      xyz="0.066294 -0.015618 0.0663"
+      rpy="-1.5708 -1.1281 -1.8022" />
+    <parent
+      link="m3" />
+    <child
+      link="m4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m5">
+    <inertial>
+      <origin
+        xyz="0.00844364418067306 0.00484997225383069 0.0463987108592474"
+        rpy="0 0 0" />
+      <mass
+        value="0.728421636932666" />
+      <inertia
+        ixx="0.00940936280484602"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.105771840789441"
+        iyz="0.0"
+        izz="0.0103084524548609" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j5"
+    type="continuous">
+    <origin
+      xyz="0.50325 -0.12105 0.0597"
+      rpy="1.5708 0.62528 1.3347" />
+    <parent
+      link="m4" />
+    <child
+      link="m5" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m6">
+    <inertial>
+      <origin
+        xyz="0.00973342590359794 -0.000274260299313323 0.0463997718526749"
+        rpy="0 0 0" />
+      <mass
+        value="0.728410383146444" />
+      <inertia
+        ixx="0.00883852127610963"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0111481955887067"
+        iyz="0.0"
+        izz="0.10308601425051" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j6"
+    type="continuous">
+    <origin
+      xyz="0.05351 0.030717 0.054"
+      rpy="1.5708 -1.0123 2.0919" />
+    <parent
+      link="m5" />
+    <child
+      link="m6" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m7">
+    <inertial>
+      <origin
+        xyz="0.00729691377255892 0.00644799503505561 0.0463999978814778"
+        rpy="0 0 0" />
+      <mass
+        value="0.7284058489887" />
+      <inertia
+        ixx="0.0098495794878621"
+        ixy="-0.00114787493858272"
+        ixz="-6.80597462910239E-05"
+        iyy="0.101367875422333"
+        iyz="-6.00897587717074E-05"
+        izz="0.0103083771798053" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j7"
+    type="continuous">
+    <origin
+      xyz="0.061675 -0.0017598 0.054"
+      rpy="1.5708 -0.36325 1.5423" />
+    <parent
+      link="m6" />
+    <child
+      link="m7" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="m8">
+    <inertial>
+      <origin
+        xyz="5.18774530877675E-05 0.000947997445179344 -0.0130389304554449"
+        rpy="0 0 0" />
+      <mass
+        value="0.159236475568111" />
+      <inertia
+        ixx="8.19282289692367E-05"
+        ixy="3.18914571058767E-07"
+        ixz="2.58517571240618E-08"
+        iyy="8.77408935801743E-05"
+        iyz="4.72040615677252E-07"
+        izz="0.149632275316311" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://zhhwur/meshes/m8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j8"
+    type="continuous">
+    <origin
+      xyz="0.046244 0.040846 0.054"
+      rpy="-1.5708 1.0025 2.2943" />
+    <parent
+      link="m7" />
+    <child
+      link="m8" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <!-- Gazebo related part -->
+  <gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  <robotNamespace>/zhhwur</robotNamespace>
+  </plugin>
+  </gazebo>
+  
+  
+  
+  
+  <!-- transmision -->
+  <transmission name="tran1">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor1">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran2">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor2">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran3">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor3">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran4">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor4">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran5">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor5">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j5">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran6">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor6">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j6">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran7">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor7">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j7">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+    <transmission name="tran8">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="motor8">
+  <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="j8">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  </transmission>
+</robot>
