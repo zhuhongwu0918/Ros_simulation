@@ -8,6 +8,10 @@ source ./devel/setup.bash
 roslaunch zhhwur zhhwur_control.launch
 
 Open a new terminal:
+
 rosrun beginner_tutorials talker
+
+
 Open another terminal:
+
 rosrun beginner_tutorials listener
